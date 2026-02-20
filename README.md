@@ -1,2 +1,24 @@
-# Regime-Coherence-as-a-Relational-Alternative-to-Cosmological-Fine-Tuning
-Reproducible code for the Regime Coherence toy-model pipeline (sampling, PASS/FAIL gates, PCA/ID diagnostics, robustness tests).
+# Regime-Coherence Toy Model (v0.33)
+
+This repository contains the minimal Python pipeline used to generate toy-model Monte Carlo samples and compute the geometric diagnostics reported in the manuscript (PCA transverse compression and intrinsic-dimension suppression), including robustness checks: band-width (ε) sweep, proposal-size (N) sweep, HDBSCAN negative control, and a three-timescale (3τ) extension.
+
+## Contents
+
+- `scripts/`
+  - `run_baseline_v033_maintext_bw.py`  
+    Baseline (2-timescale) pipeline: sampling + gates + PASS/FAIL + PASS-fitted PCA in global z-score space + figures + ID table + diagnostic dump.
+  - `controls/`  
+    Negative controls (e.g., HDBSCAN on FAIL in PASS-fitted PCA space).
+  - `sweeps/`  
+    Robustness sweeps (epsilon sweep, N sweep) used to populate Appendix D tables.
+  - `three-tau/`  
+    Three-timescale (3τ) variant used for Appendix D.5.
+
+- `outputs/`  
+  Generated figures and summary tables (not tracked by git; see `.gitignore`).
+
+## Requirements
+
+Install dependencies:
+```bash
+pip install -r requirements.txt
