@@ -2,6 +2,18 @@
 
 This repository contains the minimal Python pipeline used to generate toy-model Monte Carlo samples and compute the geometric diagnostics reported in the manuscript (PCA transverse compression and intrinsic-dimension suppression), including robustness checks: band-width (ε) sweep, proposal-size (N) sweep, HDBSCAN negative control, and a three-timescale (3τ) extension.
 
+## Repository layout (branches)
+
+This repository uses separate branches for clarity:
+
+- **main**: project overview + `README.md`, `requirements.txt`, licensing, and general notes  
+- **scripts**: runnable analysis scripts (baseline / sweeps / three-τ)  
+  → https://github.com/erikczinege350-ux/Regime-Coherence-as-a-Relational-Alternative-to-Cosmological-Fine-Tuning/tree/scripts
+- **outputs**: generated figures and diagnostic dumps produced by the scripts  
+  → https://github.com/erikczinege350-ux/Regime-Coherence-as-a-Relational-Alternative-to-Cosmological-Fine-Tuning/tree/outputs
+
+If you just want to run the code, switch to the `scripts` branch. If you want to inspect the generated figures, switch to the `outputs` branch.
+
 ## Contents
 
 - `scripts/`
@@ -21,4 +33,5 @@ This repository contains the minimal Python pipeline used to generate toy-model 
 
 Install dependencies:
 ```bash
+
 pip install -r requirements.txt
