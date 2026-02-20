@@ -205,3 +205,13 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+# project outputs / data (do not commit)
+outputs/
+data/
+
+# large artifacts (keep repo light)
+*.npz
+*.npy
+*.csv
+*.png
+*.pdf
