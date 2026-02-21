@@ -1,4 +1,4 @@
-# Regime-Coherence Toy Model (v0.33)
+# Regime-Coherence Toy Model 
 
 This repository contains the minimal Python pipeline used to generate toy-model Monte Carlo samples and compute the geometric diagnostics reported in the manuscript (PCA transverse compression and intrinsic-dimension suppression), including robustness checks: band-width (ε) sweep, proposal-size (N) sweep, HDBSCAN negative control, and a three-timescale (3τ) extension.
 
@@ -35,3 +35,4 @@ Install dependencies:
 ```bash
 
 pip install -r requirements.txt
+
